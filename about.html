@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Trevor's journey, design philosophy, technical skills, and creative background.">
+  <title>About Trevor | Story &amp; Background</title>
+
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <main class="page-wrapper about-wrapper">
+    <!-- Navigation back to Home -->
+    <nav class="page-nav" aria-label="Page navigation">
+      <a href="index.html" class="nav-back-btn" id="backToHome">
+        <span class="nav-arrow">←</span>
+        <span>Back to Home</span>
+      </a>
+      <span class="nav-status-pill">
+        <span class="status-dot"></span>
+        <span>Open to Projects</span>
+      </span>
+    </nav>
+
+    <!-- Main About Card -->
+    <article class="showcase-card about-card" id="aboutProfileCard">
+      <!-- Mouse spotlight -->
+      <div class="card-spotlight" id="cardSpotlight" aria-hidden="true"></div>
+
+      <!-- Header Section -->
+      <header class="about-hero">
+        <div class="about-badge">Biography &amp; Philosophy</div>
+        <h1 class="about-title">Hi, I'm <span class="highlight-name">Trevor</span>.</h1>
+        <p class="about-lead">
+          A creative developer dedicated to bridging the gap between elegant design aesthetics and high-performance, resilient code.
+        </p>
+      </header>
+
+      <!-- Biography Narrative Section -->
+      <section class="about-story-section">
+        <h2 class="section-heading">My Story</h2>
+        <div class="story-paragraphs">
+          <p>
+            My journey began with a curiosity for how ideas turn into interactive, visual experiences on the web. Over the years, that curiosity transformed into a deep passion for building interfaces that feel alive, responsive, and effortless to use.
+          </p>
+          <p>
+            I believe that great software is more than just clean syntax—it's about empathy for the person behind the screen. From subtle hover micro-interactions to harmonious typography and thoughtful color schemes, I focus on the small details that elevate good software into something memorable.
+          </p>
+        </div>
+      </section>
+
+      <!-- Core Pillars Grid -->
+      <section class="about-pillars-section" aria-label="Core Pillars">
+        <h2 class="section-heading">What Drives My Work</h2>
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">🎨</div>
+            <h3 class="pillar-title">Craft &amp; Aesthetic</h3>
+            <p class="pillar-desc">
+              Clean layouts, balanced contrast, modern glassmorphism, and fluid animations designed to captivate at first glance.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">⚡</div>
+            <h3 class="pillar-title">Fast &amp; Responsive</h3>
+            <p class="pillar-desc">
+              Lightweight, semantic markup and optimized stylesheets ensuring lightning-quick loads on mobile, tablet, and desktop.
+            </p>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">🧩</div>
+            <h3 class="pillar-title">Problem Solving</h3>
+            <p class="pillar-desc">
+              Approaching technical challenges with curiosity, disciplined architecture, and an appetite for continuous learning.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tooling & Skills Section -->
+      <section class="about-skills-section">
+        <h2 class="section-heading">Skills &amp; Technologies</h2>
+        <div class="tags-section about-tags">
+          <span class="tag-pill">Semantic HTML5</span>
+          <span class="tag-pill">Modern Vanilla CSS</span>
+          <span class="tag-pill">Modern JavaScript (ES6+)</span>
+          <span class="tag-pill">UI/UX Design</span>
+          <span class="tag-pill">Responsive Design</span>
+          <span class="tag-pill">Micro-Animations</span>
+          <span class="tag-pill">Web Performance</span>
+          <span class="tag-pill">Accessible Layouts</span>
+        </div>
+      </section>
+
+      <!-- Quick Highlights -->
+      <section class="highlights-section" aria-label="Quick Highlights">
+        <div class="highlights-grid">
+          <div class="highlight-item">
+            <span class="highlight-label">Specialty</span>
+            <span class="highlight-value">Interactive Frontend</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-label">Mindset</span>
+            <span class="highlight-value">Detail &amp; User First</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-label">Status</span>
+            <span class="highlight-value">Always Building</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Actions -->
+      <footer class="about-footer-actions">
+        <a href="index.html" class="btn btn-secondary">
+          <span class="btn-icon">🏠</span>
+          <span class="btn-text">Back to Profile</span>
+        </a>
+        <button class="btn btn-primary" id="aboutContactBtn" type="button">
+          <span class="btn-text">Let's Connect 🤝</span>
+          <span class="btn-glow"></span>
+        </button>
+      </footer>
+    </article>
+  </main>
+
+  <!-- Notification Toast -->
+  <aside class="toast" id="toastNotification" role="alert" aria-live="polite">
+    <span class="toast-icon">✨</span>
+    <span class="toast-message" id="toastMessage">Glad you stopped by!</span>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>

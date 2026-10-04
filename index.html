@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal profile and interactive showcase for Trevor.">
+  <title>Trevor | Personal Showcase</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow elements -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <main class="page-wrapper">
+    <article class="showcase-card" id="profileCard">
+      <!-- Dynamic spotlight follow effect -->
+      <div class="card-spotlight" id="cardSpotlight" aria-hidden="true"></div>
+
+      <!-- Top status & Navigation bar -->
+      <nav class="home-nav" aria-label="Main Navigation">
+        <div class="status-badge" id="statusBadge">
+          <span class="status-dot"></span>
+          <span class="status-text">Available for Collaboration</span>
+        </div>
+        <a href="about.html" class="nav-link-pill" id="aboutNavPill">
+          <span>About Me</span>
+          <span class="nav-link-arrow">→</span>
+        </a>
+      </nav>
+
+      <!-- Avatar with radiant gradient border -->
+      <div class="avatar-container">
+        <div class="avatar-ring"></div>
+        <div class="avatar-content">
+          <span class="avatar-letter">T</span>
+        </div>
+      </div>
+
+      <!-- Main Headline & Intro -->
+      <div class="identity-section">
+        <h1 class="user-name" id="userName">Trevor</h1>
+        <p class="user-role">Creative Developer &amp; UI Enthusiast</p>
+        <p class="user-bio">
+          Designing immersive digital experiences with modern web technologies, thoughtful aesthetics, and fluid interactions.
+        </p>
+      </div>
+
+      <!-- Skill / Interest Badges -->
+      <section class="tags-section" aria-label="Skills and Interests">
+        <span class="tag-pill">Frontend Design</span>
+        <span class="tag-pill">Creative Coding</span>
+        <span class="tag-pill">UI / UX</span>
+        <span class="tag-pill">Web Animation</span>
+      </section>
+
+      <!-- Action Buttons & Navigation -->
+      <footer class="actions-section">
+        <a href="about.html" class="btn btn-primary" id="exploreAboutBtn">
+          <span class="btn-text">Read About Me →</span>
+          <span class="btn-glow"></span>
+        </a>
+        <button class="btn btn-secondary" id="greetBtn" type="button">
+          <span class="btn-text">Say Hello 👋</span>
+        </button>
+        <button class="btn btn-secondary" id="copyBtn" type="button" title="Copy Email">
+          <span class="btn-icon">📋</span>
+          <span class="btn-text" id="copyBtnText">Email</span>
+        </button>
+      </footer>
+    </article>
+  </main>
+
+  <!-- Notification Toast -->
+  <aside class="toast" id="toastNotification" role="alert" aria-live="polite">
+    <span class="toast-icon">✨</span>
+    <span class="toast-message" id="toastMessage">Welcome to Trevor's showcase!</span>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
